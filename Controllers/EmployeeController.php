@@ -22,7 +22,22 @@ class EmployeeController{
         $num = $db->execute_update_prepared_statement($params);
         return $num;
     }
-    public function updateEmployee($newEmployee){}
+    public function updateEmployee($newEmployee){
+        $id = $newEmployee->getId();
+        $fname = $newEmployee->getFname();
+        $mname = $newEmployee->getMname();
+        $dob = $newEmployee->getDob();
+        $natid = $newEmployee->getNational_id();
+        $nhif = $newEmployee->getNhif();
+        $nssf = $newEmployee->getNssf();
+        $date_added = $newEmployee->getDate_added();
+        $rank = $newEmployee->getRank();
+        $promotion = $newEmployee->getPromotion();
+        $gender = $newEmployee->getGender();
+        $salary = $newEmployee->getSalary();
+        $sql = "UPDATE employees SET fname=:fname,mname=:mname,dob=:dob,national_id=:natid,NHIF=:nhif,NSSF=:nssf,date_added=:date_added,rank=:rank,promotion=:promotion,Gender=:gender,Salary=:salary,Regimental=:regimental, WHERE id=:id";
+                
+    }
     public function listEmployees(){}
     public function keywordSearch($keyword){}
     public function deleteEmployee($id){}

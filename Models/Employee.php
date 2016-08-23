@@ -14,6 +14,7 @@ private $dept;
 private $promotion;
 private $gender;
 private $salary;
+private $regimental;
 function setId($id){
     $this->id = $id;
 }
@@ -86,5 +87,22 @@ function setSalary($salary){
 function getSalary(){
     return $this->salary;
 }
+function getDept() {
+    return $this->dept;
+}
+
+function getRegimental() {
+    return $this->regimental;
+}
+
+function setDept($dept) {
+    $this->dept = $dept;
+}
+
+function setRegimental($regimental) {
+    $this->regimental = $regimental;
+}
+
+
 }
 ?>

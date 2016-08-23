@@ -23,7 +23,7 @@ if (!isset($num) || !is_int($num) || $num <= 0 ){
     echo json_encode($msg);
 }
 else {
-    $msg = array("Status" => "OK","Description" => "Update Success $num rows Updated" );
+    $msg = array("Status" => "OK","Description" => "Update Success $num row(s) Updated" );
     echo json_encode($msg);
 }
 

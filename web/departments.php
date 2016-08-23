@@ -35,11 +35,13 @@
 
                 </div>
             
-                <div class="panel panel-default">
-                <table>
-                    <th colspan="3">Department List</th>
+              
+                    <div class="table-responsive">
+                        <table id="tbldepts" class="table-striped table-condensed table-hover table-striped table table-bordered">
+                            <tr><th colspan="3">Organisation Department List</th></tr>
                 </table> 
-                </div>
+                    </div>
+                
                 
             </div>
         </body>
