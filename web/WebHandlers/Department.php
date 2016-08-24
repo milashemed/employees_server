@@ -9,6 +9,7 @@ switch($operation){
     case "Update" : update($_POST['id'],$_POST['description']);break;
     case "List" : listDepartments();break;
     case "keywordSearch" : keywordSearch($_POST['keyword']);break;
+    default: header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
 }
 function add($description){
 
